@@ -4,7 +4,7 @@ AI-powered risk assessment and management platform that analyzes AI systems acro
 
 ## 🏗️ System Architecture
 
-![AI Risk Manager Architecture](./ai-risk-architecture.svg)
+![AI Risk Manager Architecture](./ai-risk-architecture.png)
 
 AI Risk Manager uses a React + Vite frontend, Node.js + Express backend, and Google Gemini AI to analyze AI system risks and generate structured risk assessments.
 
