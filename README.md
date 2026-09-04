@@ -46,6 +46,7 @@ AI Risk Manager uses a React + Vite frontend, Node.js + Express backend, and Goo
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React
 - Vite
 - Recharts
@@ -53,6 +54,7 @@ AI Risk Manager uses a React + Vite frontend, Node.js + Express backend, and Goo
 - Browser localStorage
 
 ### Backend
+
 - Node.js
 - Express
 - CORS
@@ -60,6 +62,7 @@ AI Risk Manager uses a React + Vite frontend, Node.js + Express backend, and Goo
 - Google GenAI SDK
 
 ### AI
+
 - Google Gemini
 
 ## 📁 Project Structure
@@ -73,3 +76,79 @@ ai-risk-manager/
 ├── README.md
 ├── package.json
 └── vite.config.js
+```
+
+## 🚀 Installation
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd server
+npm install
+node server.js
+```
+
+The frontend communicates with the Express backend through the risk analysis API.
+
+## 🔌 API Endpoints
+
+### Health Check
+
+```text
+GET /api/health
+```
+
+### Risk Analysis
+
+```text
+POST /api/analyze-risk
+```
+
+The risk analysis endpoint receives AI system information and returns a structured assessment generated with Gemini AI.
+
+## 🤖 AI Analysis
+
+Gemini evaluates the submitted AI system across:
+
+- Data Privacy
+- Security
+- Bias & Fairness
+- Reliability
+- Compliance
+- Operational Risk
+
+The system generates:
+
+- Overall risk score
+- Overall risk level
+- Risk summary
+- Category-wise scores
+- Risk descriptions
+- Impact
+- Likelihood
+- Recommended actions
+
+## 🛡️ Responsible AI
+
+AI Risk Manager is designed as a decision-support system. AI-generated recommendations should be reviewed and validated by appropriate human stakeholders before making important risk, compliance, or governance decisions.
+
+## 🔮 Future Enhancements
+
+- Automated compliance frameworks
+- Enterprise authentication
+- Cloud database integration
+- Advanced risk forecasting
+- Exportable PDF reports
+- Continuous AI system monitoring
+- Organization-level risk dashboards
+
+## 📌 Project Highlights
+
+AI Risk Manager combines AI risk assessment, structured analysis, visualization, and responsible AI practices into a single platform.
