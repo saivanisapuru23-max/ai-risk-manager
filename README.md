@@ -1,16 +1,75 @@
-# React + Vite
+# 🛡️ AI Risk Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AI-powered risk assessment and management platform that analyzes AI systems across privacy, security, fairness, reliability, compliance, and operational risks.
 
-Currently, two official plugins are available:
+## 🏗️ System Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![AI Risk Manager Architecture](./ai-risk-architecture.svg)
 
-## React Compiler
+AI Risk Manager uses a React + Vite frontend, Node.js + Express backend, and Google Gemini AI to analyze AI system risks and generate structured risk assessments.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- 📊 Risk assessment dashboard
+- 📝 New AI system assessment
+- 🤖 Gemini-powered risk analysis
+- 🔐 Data Privacy and Security assessment
+- ⚖️ Bias & Fairness analysis
+- ⚙️ Reliability and Operational risk analysis
+- 📋 Compliance risk assessment
+- 📈 Risk score visualization
+- 🕒 Assessment history
+- 📄 Report generation
+- 💾 Browser localStorage for assessment history
+- ❤️ System health monitoring
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔄 How It Works
+
+1. User enters AI system information.
+2. React frontend sends the assessment to the backend.
+3. Node.js + Express validates the request.
+4. Backend sends a structured prompt to Gemini AI.
+5. Gemini analyzes six major risk categories.
+6. Structured JSON results are returned.
+7. Frontend displays risk scores, levels, explanations, and recommended actions.
+8. Assessment results are stored locally for history and reporting.
+
+## 🧠 Risk Categories
+
+- Data Privacy
+- Security
+- Bias & Fairness
+- Reliability
+- Compliance
+- Operational Risk
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- Recharts
+- CSS
+- Browser localStorage
+
+### Backend
+- Node.js
+- Express
+- CORS
+- dotenv
+- Google GenAI SDK
+
+### AI
+- Google Gemini
+
+## 📁 Project Structure
+
+```text
+ai-risk-manager/
+├── src/
+├── public/
+├── server/
+├── ai-risk-architecture.svg
+├── README.md
+├── package.json
+└── vite.config.js
